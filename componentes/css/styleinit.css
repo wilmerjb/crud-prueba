@@ -1,0 +1,28 @@
+*{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin: 5px;
+    font-family: cursive;
+}
+form h1{
+    
+    margin-bottom:  80px;
+}
+.correoprin{
+    padding: 10px;
+}
+.correoprin>input  {
+
+  padding: 20px;
+  border-radius: 20px;
+}
+.initbot>button  {
+    margin-bottom: 20px;
+    padding: 10px 40px 20px 40px;
+    border-radius: 20px 30px 20px ;
+    
+}.initbot>button a{
+    color: white;
+}
+
