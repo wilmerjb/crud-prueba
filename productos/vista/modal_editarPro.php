@@ -4,7 +4,7 @@ include "./modelo/conexionPro.php";
 include "./controlador/editarPro.php";
 ?>
 <!-- Modal desplegable-->
-<div class="modal fade" id="editorModal" tabindex="-1" aria-labelledby="editorModalLabel" aria-hidden="true" data-id="<?= $datos->id_produc ?>">
+<div class="modal fade" id="editorModal?id=<?= $datos->id_produc ?>" tabindex="-1" aria-labelledby="editorModalLabel" aria-hidden="true" >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

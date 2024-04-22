@@ -1,4 +1,5 @@
 <table class="table">
+    <button type="btn" class="btn btn-secondary  m-2 p-2"><a href="../vistaPrincipal.php/indexClientes.php" >REGRESAR</a></button>
     <thead>
         <tr>
             <th scope="col" class="bg-info">Codigo</th>

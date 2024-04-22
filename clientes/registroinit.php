@@ -30,11 +30,14 @@ include "./modelo/conexionClie.php";
             <div class="mb-3 p-2">
                 <input type="password" class="form-control"  id="inputContraseña" name="inputContraseña" placeholder="Contraseña" max="" required>
             </div>
+            <div class="rol" >
+                <input type="radio" name="rol" id="rol" value="usuario" required>Usuario
+            </div>
             <div class="initbot">
                 <button type="submit" class="btn btn-primary" name="btnRegistrar" value="ok">Registrar</button>
             </div>
             <div class="initbot">
-                <a href="../index.php"><button type="button" class="btn btn-secondary">Regresar</button></a>
+                <a href="../initSesion.php"><button type="button" class="btn btn-secondary">Regresar</button></a>
             </div>
             </div>
         </form>

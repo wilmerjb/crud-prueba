@@ -1,4 +1,5 @@
 <table class="table">
+    <button type="btn" class="btn btn-secondary  m-2 p-2"><a href="../vistaPrincipal.php/indexClientes.php" >REGRESAR</a></button>
     <thead>
         <tr>    
             <th scope="col" class="bg-info">Codigo</th>
@@ -28,6 +29,7 @@
                     <a href="indexProveedor.php?id=<?= $datos->id_proveedor ?>" class="btn btn-danger">ELIMINAR</a>
                 </td>
                 <?php
+                    include "./vista/modal_editor.php";
                 ?>
             </tr>
         <?php } ?>

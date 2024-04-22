@@ -1,10 +1,12 @@
-<table class="tableClientes">
+<table class="table">
+    <button type="btn" class="btn btn-secondary  m-2 p-2"><a href="../vistaPrincipal.php/indexClientes.php" >REGRESAR</a></button>
     <thead>
         <tr>
             <th scope="col" class="bg-info">ID</th>
             <th scope="col" class="bg-info">Nombre</th>
-            <th scope="col" class="bg-info">Correo</th>
+            <th scope="col" class="bg-info">Correo <br></th>
             <th scope="col" class="bg-info">Contraseña</th>
+            <th scope="col"class="bg-info">ROL</th>
             <th scope="col" class="bg-info">Acciones</th>
         </tr>
     </thead>
@@ -19,6 +21,7 @@
                 <th><?= $datos->nombre_cliente ?></th>
                 <td><?= $datos->correo ?></td>
                 <td><?= $datos->contraseña ?></td>
+                <td><?= $datos->rol ?></td>
 
                 <!-- acciones  -->
                 <td>

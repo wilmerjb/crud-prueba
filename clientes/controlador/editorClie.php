@@ -3,12 +3,14 @@ if (!empty($_POST["btnEditar"])) {
     if (
         !empty($_POST["inputNombre"]) and
         !empty($_POST["inputCorreo"])  and
-        !empty($_POST["inputContraseña"]) 
+        !empty($_POST["inputContraseña"]) and 
+        !empty($_POST["rol"])
     ) {
         $nombre = $_POST["inputNombre"];
         $correo = $_POST["inputCorreo"];
         $contraseña = $_POST["inputContraseña"]; 
-        $sql = $conexion->query("UPDATE clientes SET nombre_cliente='$nombre', correo='$correo', contraseña='$contraseña'
+        $rol = $_POST["rol"];
+        $sql = $conexion->query("UPDATE clientes SET nombre_cliente='$nombre', correo='$correo', contraseña='$contraseña' , rol='$rol'
                  WHERE nombre_cliente ='$nombre'");
         if($sql === TRUE){
             echo '<div class="alert alert-success m-2">Producto editado</div>';
