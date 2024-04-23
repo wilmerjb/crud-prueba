@@ -8,7 +8,7 @@
     <!-- libreria css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- componentes css -->
-    <link rel="stylesheet" href="./componentes/css/styleinit.css">
+    <link rel="stylesheet" href="./vistaPrincipal.php/vista/styleinit.css">
 </head>
 <?php
 include "./verificacionSeguridad.php/modelp/conexionVer.php";
@@ -19,11 +19,12 @@ include "./verificacionSeguridad.php/modelp/conexionVer.php";
     <section>
         <!-- inicio de login -->
         <form class="col-11 p-3 m-auto" method="post">
-            <h2 class="text-center text-secondary p-5">INICIO DE SESEION</h>
+            <h1 class="">ARTESANITOS</h1>
+            <h2 class="text-center text-secondary p-1">INICIO DE SESEION</h>
             <?php
             include "./verificacionSeguridad.php/initVerificar.php";
             ?>
-            <div class="mb-3 p-2">
+            <div class="mb-3 p-3">
                 <input type="text" class="form-control" id="inputCorreo" name="inputCorreo" placeholder="correo">
             </div>
             <div class="mb-3 ">

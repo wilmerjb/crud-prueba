@@ -1,7 +1,14 @@
+<script>
+    function eliminar() {
+        let respuesta = confirm("¿Esta seguro de eliminar?");
+        return respuesta
+    }
+</script>
 <table class="table">
     <button type="btn" class="btn btn-secondary  m-2 p-2"><a href="../vistaPrincipal.php/indexAdmin.php" >REGRESAR</a></button>
     <thead>
         <tr>
+        <h1 class="text-center p-2 ">TABLA CLIENTES</h1>   
             <th scope="col" class="bg-info">ID</th>
             <th scope="col" class="bg-info">Nombre</th>
             <th scope="col" class="bg-info">Correo <br></th>
@@ -26,7 +33,7 @@
                 <!-- acciones  -->
                 <td>
                     <button type="button" class="btn btn-warning my-2" data-bs-toggle="modal" data-bs-target="#clienteModal?id=<?= $datos->id ?>">Editar</button>
-                    <a href="./indexClientes_admin.php?id=<?= $datos->id ?>" class="btn btn-danger">ELIMINAR</a>
+                    <a onclick="return eliminar()"  href="./indexClientes_admin.php?id=<?= $datos->id ?>" class="btn btn-danger">ELIMINAR</a>
                 </td>
                 <?php
                 include "./vista/editor_modalClie.php";

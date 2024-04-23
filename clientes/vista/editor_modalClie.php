@@ -26,7 +26,7 @@ include "./controlador/editorClie.php";
             <label for="inputContraseña" class="form-label">Contraseña</label>
             <input type="text" class="form-control" id="inputContraseña" name="inputContraseña" value="<?= $datos->contraseña ?>">
           </div>
-          <div class="mb-3 p-2 ">
+          <div class="mb-3 p-2  ">
             <label for="rol" class="form-label">ROL :</label>
             <input type="text" name="rol" id="rol" value="usuario" value="<?= $datos->rol ?>">
           </div>

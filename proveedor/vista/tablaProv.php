@@ -1,7 +1,14 @@
+<script>
+    function eliminar() {
+        let respuesta = confirm("¿Esta seguro de eliminar?");
+        return respuesta
+    }
+</script>
 <table class="table">
     <button type="btn" class="btn btn-secondary m-2 p-2"><a href="../vistaPrincipal.php/indexAdmin.php">REGRESAR</a></button>
     <thead>
         <tr>
+            <h1 class="text-center p-2 ">TABLA PROVEEDORES </h1>
             <th scope="col" class="bg-info">Codigo</th>
             <th scope="col" class="bg-info">Nombre</th>
             <th scope="col" class="bg-info">Producto Bruto</th>
@@ -26,7 +33,7 @@
                 <!-- acciones  -->
                 <td>
                     <button type="button" class="btn btn-warning my-2" data-bs-toggle="modal" data-bs-target="#editorModal?id=<?= $datos->id_proveedor ?>">Editar</button>
-                    <a href="indexProveedor_admin.php?id=<?= $datos->id_proveedor ?>" class="btn btn-danger">ELIMINAR</a>
+                    <a onclick="return eliminar()" href="indexProveedor_admin.php?id=<?= $datos->id_proveedor ?>" class="btn btn-danger">ELIMINAR</a>
                 </td>
                 <?php
                 include "./vista/modal_editor.php";
