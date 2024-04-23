@@ -9,17 +9,17 @@ if (!empty($_POST["btnEditar"])) {
     ) {
         $codigo = $_POST["inputCodigo"];
         $nombre = $_POST["inputNombre"];
-        $pro_bruto = $_POST["inputProBruto"]; 
+        $pro_bruto = $_POST["inputProBruto"];
         $direccion = $_POST["inputDireccion"];
         $telefono = $_POST["inputTelefono"];
-        $sql = $conexion->query("UPDATE proveedor SET id_proveedor=$codigo, nombre_proveedor='$nombre', nom_encargo='$pro_bruto', direccion_proveedor='$direccion', telefono_proveedor=$telefono
-                 WHERE id_proveedor='$codigo'");
-        if($sql === TRUE){
-            echo '<div class="alert alert-success m-2">Proveedor editado</div>';
-        }else{
+        $sql = $conexion->query("UPDATE proveedor SET id_proveedor=$codigo, nombre_proveedor='$nombre', nom_encargo='$pro_bruto', direccion_proveedor='$direccion', telefono_proveedor=$telefono WHERE id_proveedor=$codigo");
+        if ($sql == 1) {
+            header('Location:../indexProveedor_admin.php');
+            exit;
+        } else {
             echo '<div class="alert alert-warning m-2">Error al editar</div>';
         }
-    }else{
-        echo '<div class="class="alert alert-warning m-2">Dejaste campos vacios</div>'; 
+    } else {
+        echo '<div class="class="alert alert-warning m-2">Dejaste campos vacios</div>';
     }
 }

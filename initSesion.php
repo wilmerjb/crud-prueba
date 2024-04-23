@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,21 +11,22 @@
     <link rel="stylesheet" href="./componentes/css/styleinit.css">
 </head>
 <?php
-include "verificacionSeguridad.php/modelo/conexionVer.php";
+include "./verificacionSeguridad.php/modelp/conexionVer.php";
+
 ?>
 
 <body>
     <section>
         <!-- inicio de login -->
         <form class="col-11 p-3 m-auto" method="post">
-            <h2 class="text-center text-secondary">INICIO DE SESEION</h2>
+            <h2 class="text-center text-secondary p-5">INICIO DE SESEION</h>
             <?php
-            include "verificacionSeguridad.php/initVerificar.php";
+            include "./verificacionSeguridad.php/initVerificar.php";
             ?>
             <div class="mb-3 p-2">
                 <input type="text" class="form-control" id="inputCorreo" name="inputCorreo" placeholder="correo">
             </div>
-            <div class="mb-3 p-2">
+            <div class="mb-3 ">
                 <input type="password" class="form-control" id="inputContraseña" name="inputContraseña" placeholder="contraseña">
             </div>
             <div class="initbot ">
@@ -36,7 +38,7 @@ include "verificacionSeguridad.php/modelo/conexionVer.php";
         </form>
     </section>
 
-
+  
     <!-- libreria js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

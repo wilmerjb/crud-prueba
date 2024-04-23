@@ -1,5 +1,5 @@
 <table class="table">
-    <button type="btn" class="btn btn-secondary  m-2 p-2"><a href="../vistaPrincipal.php/indexClientes.php" >REGRESAR</a></button>
+    <button type="btn" class="btn btn-secondary  m-2 p-2"><a href="../vistaPrincipal.php/indexAdmin.php" >REGRESAR</a></button>
     <thead>
         <tr>
             <th scope="col" class="bg-info">ID</th>
@@ -26,7 +26,7 @@
                 <!-- acciones  -->
                 <td>
                     <button type="button" class="btn btn-warning my-2" data-bs-toggle="modal" data-bs-target="#clienteModal?id=<?= $datos->id ?>">Editar</button>
-                    <a href="./indexClientes.php?id=<?= $datos->id ?>" class="btn btn-danger">ELIMINAR</a>
+                    <a href="./indexClientes_admin.php?id=<?= $datos->id ?>" class="btn btn-danger">ELIMINAR</a>
                 </td>
                 <?php
                 include "./vista/editor_modalClie.php";

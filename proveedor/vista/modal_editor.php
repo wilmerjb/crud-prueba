@@ -16,7 +16,7 @@ include "./controlador/editorProv.php";
           <h3 class="text-center text-secondary">Editor de Proveedores</h3>
           <div class="mb-3 p-2">
             <label for="inputCodigo" class="form-label">Codigo</label>
-            <input type="text" class="form-control" id="inputCodigo" name="inputCodigo" value="<?= $datos->id_proveedor?>" max="">
+            <input type="number" class="form-control" id="inputCodigo" name="inputCodigo" value="<?= $datos->id_proveedor?>" max="">
           </div>
           <div class="mb-3 p-2">
             <label for="inputNombre" class="form-label">Nombre del proveedor</label>
@@ -40,7 +40,6 @@ include "./controlador/editorProv.php";
           </div>
         </form>
       </div>
-
     </div>
   </div>
 </div>

@@ -13,7 +13,7 @@ if (!empty($_POST["btnEditar"])) {
         $sql = $conexion->query("UPDATE clientes SET nombre_cliente='$nombre', correo='$correo', contraseña='$contraseña' , rol='$rol'
                  WHERE nombre_cliente ='$nombre'");
         if($sql === TRUE){
-            echo '<div class="alert alert-success m-2">Producto editado</div>';
+            header('Location: ./indexClientes_admin.php');
         }else{
             echo '<div class="alert alert-warning m-2">Error al editar</div>';
         }

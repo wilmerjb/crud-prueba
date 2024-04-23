@@ -1,3 +1,5 @@
 <?php
-    $conexion = new mysqli("localhost", "root", "", "baseprueba");
+    $conexion = new mysqli("localhost","root","","baseprueba");
+
+   
 ?>

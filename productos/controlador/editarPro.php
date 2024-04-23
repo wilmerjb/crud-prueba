@@ -10,10 +10,9 @@ if (!empty($_POST["btnEditar"])) {
         $nombre = $_POST["inputNombre"];
         $cantidad = $_POST["inputCantidad"]; 
         $precio = $_POST["inputPrecio"];
-        $sql = $conexion->query("UPDATE productos SET id_produc='$codigo', nom_produc='$nombre', cantidad=$cantidad, precio=$precio
-                 WHERE id_produc='$codigo'");
+        $sql = $conexion->query("UPDATE productos SET id_produc='$codigo', nom_produc='$nombre', cantidad=$cantidad, precio=$precio WHERE id_produc='$codigo'");
         if($sql === TRUE){
-            echo '<div class="alert alert-success m-2">Producto editado</div>';
+           header('Location: ./indexProductos_admin.php');
         }else{
             echo '<div class="alert alert-warning m-2">Error al editar</div>';
         }
